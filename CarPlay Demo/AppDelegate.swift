@@ -27,8 +27,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         if(connectingSceneSession.role == UISceneSession.Role.carTemplateApplication) {
             let scene =  UISceneConfiguration(name: "CarPlay Configuration", sessionRole: connectingSceneSession.role)
 
-            // At the time of writing this blog post there seems to be a bug with the info.plist file where
-            // the delegateClass isn't set correctly. So we manually set it here.
             scene.delegateClass = CarPlaySceneDelegate.self
                   
             return scene
