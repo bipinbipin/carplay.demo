@@ -25,15 +25,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func sceneWillEnterForeground(_ scene: UIScene) {
       // ...
-        debugPrint("SceneDelegate Working.")
+        debugPrint("SceneDelegate sceneWillEnterForeground.")
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
       // ...
+        debugPrint("SceneDelegate sceneDidBecomeActive.")
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
       // ...
+        debugPrint("SceneDelegate sceneWillResignActive.")
     }
 
     
